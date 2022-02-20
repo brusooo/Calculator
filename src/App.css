@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Comforter&family=Mochiy+Pop+P+One&family=Quintessential&display=swap");
+html {
+  overflow: hidden;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -198,5 +202,25 @@ body {
   font-size: 1.3rem;
   opacity: 0.6;
   font-family: "Comforter", cursive;
+}
+
+@media screen and (max-width: 450px) {
+  .container {
+    -webkit-transform: translate(-50%, -50%) scale(0.8);
+            transform: translate(-50%, -50%) scale(0.8);
+  }
+  .info .info_icon {
+    right: -50px;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .container {
+    -webkit-transform: translate(-50%, -50%) scale(0.7);
+            transform: translate(-50%, -50%) scale(0.7);
+  }
+  .info .info_icon {
+    right: -45px;
+  }
 }
 /*# sourceMappingURL=App.css.map */

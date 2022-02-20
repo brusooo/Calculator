@@ -3,6 +3,10 @@
 //Variables and functions
 $white: #ffffff;
 
+html{
+  overflow: hidden;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -172,5 +176,30 @@ body {
     font-size: 1.3rem;
     opacity: 0.6;
     font-family: "Comforter", cursive;
+  }
+}
+
+
+@media screen and (max-width : 450px){
+    .container{
+      transform: translate(-50%,-50%) scale(0.8);
+    }
+
+    .info{
+      & .info_icon{
+        right: -50px;
+      }
+    }
+}
+
+@media screen and (max-width : 330px){
+  .container{
+    transform: translate(-50%,-50%) scale(0.7);
+  }
+
+  .info{
+    & .info_icon{
+      right: -45px;
+    }
   }
 }

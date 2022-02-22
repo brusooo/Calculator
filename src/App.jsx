@@ -17,7 +17,7 @@ const App = () => {
     <div>
       {!loading ? 
       
-      <div class="loader">
+      <div className="loader">
         <span></span>
         <span></span>
         <span></span>

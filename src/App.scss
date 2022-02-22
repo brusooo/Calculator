@@ -64,17 +64,15 @@ body {
       animation-duration: 2s;
     }
 
-  }
-
-  @keyframes load{
-    0%{
-      transform: translateY(0);
+    @keyframes load{
+      0%{
+        transform: translateY(0);
+      }
+      50%{
+        transform: translateY(-20px);
+      }
     }
-    50%{
-      transform: translateY(-20px);
-    }
   }
-
 }
 
 .title {

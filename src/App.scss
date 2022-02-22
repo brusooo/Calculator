@@ -30,6 +30,7 @@ body {
   background: #141e30;
   background: linear-gradient(to right, #243b55, #141e30);
   font-family: "Mochiy Pop P One", sans-serif;
+  cursor: url("assets/cursor.png") , auto;
 }
 
 .loader{
@@ -193,7 +194,7 @@ body {
       @include flexdisplay();
       box-shadow: inset 3px 3px 10px rgba(0, 0, 0, 0.15),
         inset -1px -1px 15px rgba(0, 0, 0, 0.15);
-      cursor: pointer;
+      cursor: url("assets/click.png") , auto;
     }
   }
   & .errorField {

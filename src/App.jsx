@@ -15,8 +15,6 @@ const App = () => {
   })
 
 
-
-  console.log(`loader ${fade ? 'fadeOut' : 'noFade'}`);
   return (
     <div>
 
@@ -25,7 +23,7 @@ const App = () => {
         <span></span>
         <span></span>
       </div>
-      
+
       <div>
         <div className='title'>
           <h1>Do and Get it</h1>

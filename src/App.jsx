@@ -5,38 +5,39 @@ import Container from './components/Container'
 
 
 const App = () => {
-  const [loading, setLoading] = useState(false);
+
+  const [fade, setFade] = useState(false);
 
   useEffect(() => {
     setTimeout(() => {
-      setLoading(true);
+      setFade(true);
     }, 3000)
   })
 
+
+
+  console.log(`loader ${fade ? 'fadeOut' : 'noFade'}`);
   return (
     <div>
-      {!loading ? 
-      
-      <div className="loader">
+
+      <div className={`loader ${fade ? 'fadeOut' : 'noFade'} `}>
         <span></span>
         <span></span>
         <span></span>
       </div>
       
-      :
-
-        <div>
-          <div className='title'>
-            <h1>Do and Get it</h1>
-          </div>
-
-          <Container />
-
-          <div className='footer'>
-            <h1>Brusooo</h1>
-          </div>
+      <div>
+        <div className='title'>
+          <h1>Do and Get it</h1>
         </div>
-      }
+
+        <Container />
+
+        <div className='footer'>
+          <h1>Brusooo</h1>
+        </div>
+      </div>
+
     </div>
   )
 }
